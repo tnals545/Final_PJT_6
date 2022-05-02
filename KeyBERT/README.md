@@ -6,8 +6,8 @@
 - [설치](https://github.com/tnals545/Final_PJT_6/tree/master/KeyBERT#설치)
 - [모델링](https://github.com/tnals545/Final_PJT_6/tree/master/KeyBERT#모델링)
   - [모델](https://github.com/tnals545/Final_PJT_6/tree/master/KeyBERT#모델)
-  - [데이터로드](https://github.com/tnals545/Final_PJT_6/tree/master/KeyBERT#데이터로드)
-  - [KeyBERT함수만들기](https://github.com/tnals545/Final_PJT_6/tree/master/KeyBERT#KeyBERT함수만들기)
+  - [데이터_로드](https://github.com/tnals545/Final_PJT_6/tree/master/KeyBERT#데이터_로드)
+  - [KeyBERT함수_만들기](https://github.com/tnals545/Final_PJT_6/tree/master/KeyBERT#KeyBERT\_함수_만들기)
     - find_titles
     - find_context
 - [결과확인](https://github.com/tnals545/Final_PJT_6/tree/master/KeyBERT#결과확인)
@@ -56,7 +56,7 @@ okt = Okt()
 
 <br>
 
-### 데이터 로드
+### 데이터_로드
 
 모델링에 사용할 데이터를 불러옵니다.
 
@@ -73,7 +73,7 @@ with open('/content/drive/MyDrive/6조_파이널PJT/data/SBERT/sb
 
 <br>
 
-### KeyBERT 함수 만들기
+### KeyBERT함수_만들기
 
 - find_titles
 
