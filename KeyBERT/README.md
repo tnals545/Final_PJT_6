@@ -5,20 +5,20 @@
 - [개요](https://github.com/tnals545/Final_PJT_6/tree/master/KeyBERT#개요)
 - [설치](https://github.com/tnals545/Final_PJT_6/tree/master/KeyBERT#설치)
 - [모델링](https://github.com/tnals545/Final_PJT_6/tree/master/KeyBERT#모델링)
-  - [모델](https://github.com/tnals545/Final_PJT_6/tree/master/KeyBERT#모델링#모델)
+  - [모델](https://github.com/tnals545/Final_PJT_6/tree/master/KeyBERT#모델)
   - 데이터 로드
   - KeyBERT 함수 만들기
     - find_titles
     - find_context
 - 결과 확인
 
-
+<br>
 
 ## 개요
 
 KeyBERT 모델을 통해 질문에 대한 키워드를 추출하여 질문의 요점을 파악하고, 그에 맞는 title의 context를 반환
 
-
+<br>
 
 ## 설치
 
@@ -29,7 +29,7 @@ SBERT를 위한 패키지인 sentence_transformers와 형태소 분석기 KoNLPy
 !pip install konlpy
 ```
 
-
+<br>
 
 ## 모델링
 
@@ -54,7 +54,7 @@ model = SentenceTransformer('sentence-transformers/xlm-r-100langs-bert-base-nli-
 okt = Okt()
 ```
 
-
+<br>
 
 ### 데이터 로드
 
@@ -71,7 +71,7 @@ with open('/content/drive/MyDrive/6조_파이널PJT/data/SBERT/sb
     stop_words = string.split('\n')
 ```
 
-
+<br>
 
 ### KeyBERT 함수 만들기
 
@@ -165,7 +165,7 @@ def find_titles(data, stop_words, question):
   return title, subs_li
 ```
 
-
+<br>
 
 - find_context
 
@@ -198,7 +198,7 @@ def find_content(data, split_data, title, subtitle):
       return '잘못된 입력입니다.'
 ```
 
-
+<br>
 
 ## 결과 확인
 
