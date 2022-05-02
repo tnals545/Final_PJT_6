@@ -8,8 +8,8 @@
   - [모델](https://github.com/tnals545/Final_PJT_6/tree/master/KeyBERT#모델)
   - [데이터_로드](https://github.com/tnals545/Final_PJT_6/tree/master/KeyBERT#데이터_로드)
   - [KeyBERT함수_만들기](https://github.com/tnals545/Final_PJT_6/tree/master/KeyBERT#KeyBERT함수_만들기)
-    - [find_titles](https://github.com/tnals545/Final_PJT_6/tree/master/KeyBERT#KeyBERT함수_만들기#find_titles)
-    - [find_context](https://github.com/tnals545/Final_PJT_6/tree/master/KeyBERT#KeyBERT함수_만들기#find_context)
+    - find_titles
+    - find_context
 - [결과확인](https://github.com/tnals545/Final_PJT_6/tree/master/KeyBERT#결과확인)
 
 <br>
