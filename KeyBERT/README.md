@@ -1,9 +1,11 @@
 # KeyBERT
 
-- 개요
-- 설치
-- 모델링
-  - 모델
+### 목차
+
+- [개요](https://github.com/tnals545/Final_PJT_6/tree/master/KeyBERT#개요)
+- [설치](https://github.com/tnals545/Final_PJT_6/tree/master/KeyBERT#설치)
+- [모델링](https://github.com/tnals545/Final_PJT_6/tree/master/KeyBERT#모델링)
+  - [모델](https://github.com/tnals545/Final_PJT_6/tree/master/KeyBERT#모델링#모델)
   - 데이터 로드
   - KeyBERT 함수 만들기
     - find_titles
