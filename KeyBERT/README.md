@@ -6,11 +6,11 @@
 - [설치](https://github.com/tnals545/Final_PJT_6/tree/master/KeyBERT#설치)
 - [모델링](https://github.com/tnals545/Final_PJT_6/tree/master/KeyBERT#모델링)
   - [모델](https://github.com/tnals545/Final_PJT_6/tree/master/KeyBERT#모델)
-  - [데이터 로드](https://github.com/tnals545/Final_PJT_6/tree/master/KeyBERT#데이터_로드)
-  - [KeyBERT 함수 만들기](https://github.com/tnals545/Final_PJT_6/tree/master/KeyBERT#KeyBERT_함수_만들기)
+  - [데이터 로드](https://github.com/tnals545/Final_PJT_6/tree/master/KeyBERT#데이터&nbsp로드)
+  - [KeyBERT 함수 만들기](https://github.com/tnals545/Final_PJT_6/tree/master/KeyBERT#KeyBERT&nbsp함수&nbsp만들기)
     - [find_titles](https://github.com/tnals545/Final_PJT_6/tree/master/KeyBERT#find_titles)
     - [find_context](https://github.com/tnals545/Final_PJT_6/tree/master/KeyBERT#find_context)
-- [결과 확인](https://github.com/tnals545/Final_PJT_6/tree/master/KeyBERT#결과_확인)
+- [결과_확인](https://github.com/tnals545/Final_PJT_6/tree/master/KeyBERT#결과&nbsp확인)
 
 <br>
 
