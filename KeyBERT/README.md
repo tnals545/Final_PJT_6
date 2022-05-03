@@ -109,6 +109,13 @@ def find_titles(data, stop_words, question):
   keywords = [qas_candidates[index] for index in distances.argsort()[0][-top_n:]]
   keyword = keywords[0] # top_n = 1인 경우
 
+  # 키워드가 없는 경우
+  if len(keyword) == 0:
+    title = ''
+    subs_li = ''
+    print('찾는 문서가 없습니다.')
+    return title, subs_li
+    
   # 키워드 공백 기준으로 분리 (ex. 지미 카터 -> [지미, 카터])
   keys = keyword.split(' ')
   title_li = list(data['title'])
