@@ -1,5 +1,5 @@
 body {
-	background: linear-gradient(hsl(210, 63%, 55%), #eada4d);
+	background: linear-gradient(hsl(210, 63%, 55%), #cceeff);
 	font-family: Verdana,Arial,Helvetica,sans-serif;
 	font-size: small;
 	color: #000000;
@@ -22,6 +22,16 @@ body {
   border-right: 1px solid rgba(255,255,255,.2);
 }
 
+.chatbotprofile {
+    width: 40px;
+    height: 40px; 
+    border-radius: 70%;
+    overflow: hidden;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    position: absolute;
+}
 
 #subtitle {
 	box-shadow:inset 0px 1px 0px 0px #ffffff;
@@ -115,6 +125,7 @@ div#dialogue {
 }
 .bot {
   margin-right: 50px;
+  margin-left: 50px;
   background-color: rgba(255,255,255,.85);
   border-bottom-left-radius: 0;
 }

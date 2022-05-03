@@ -59,6 +59,7 @@ function getReply2(text) {
     // reply = reply.replace(/\n/g, "<br>");
     if (reply === '{"detail":[{"loc":["body","message"],"msg":"field required","type":"value_error.missing"}]}') return false;
     anvoice = new Audio("/sounds/answer.mp3")
+    anvoice.volume = 0.4;
     postReply(reply);
   } catch (e) {
     postReply(e.message + "\n" + e.line);
@@ -80,7 +81,10 @@ function getsubtitle() {
     const tst = JSON.parse(json);
     var title = tst.title;
     var pmes = tst.pmes
-        $("#titlensub").append(
+    if (title === '') {
+      
+    } else {
+      $("#titlensub").append(
       "<input type='text' name='titlesubmit' id='titlesubmit' value='"
       + title +
       "' style='display:none'>"
@@ -93,8 +97,10 @@ function getsubtitle() {
         "'>" + subtitle[i] + "</option>");
        $("#subbuttons").append(
         "<button name='subtitle' id='subtitle' onclick='selectoption("+ i +")'>"+ subtitle[i] +"</button>");    
+      }
     }
     anvoice = new Audio("/sounds/answer.mp3")
+    anvoice.volume = 0.4;
     postReply(pmes);
   } catch (e) {
     postReply(e.message + "\n" + e.line);
@@ -116,9 +122,9 @@ function waitReply(text) {
 function postwaitReply(reply, delay) {
   if (!delay) delay = 800;
   var waitid = "disapear";
-  setTimeout(function() {
+  setTimeout(function () {
     $("#dialogue").append(
-      "<div class='bot-row' id='" +
+      "<img class= 'chatbotprofile' src = '/img/chatbotprofile.png' alt = 'noproflies' ><div class='bot-row' id='" +
         waitid +
         "'><span class='bot'>" +
         reply +
@@ -137,11 +143,11 @@ function startpostReply(reply, delay) {
   var rand = Math.round(Math.random() * 10000);;
   setTimeout(function () {
     $("#dialogue").append(
-      "<div class='bot-row' id='" +
+      "<img class= 'chatbotprofile' src = '/img/chatbotprofile.png' alt = 'noproflies' ><div class='bot-row' id='" +
         rand +
         "'><span class='bot'>" +
         reply +
-        "</span></div>"
+      "</span></div>"
     );
     pop.play();
     $("#" + rand)
@@ -157,7 +163,7 @@ function postReply(reply, delay) {
   setTimeout(function () {
     $("#disapear").remove();
     $("#dialogue").append(
-      "<div class='bot-row' id='" +
+      "<img class= 'chatbotprofile' src = '/img/chatbotprofile.png' alt = 'noproflies' ><div class='bot-row' id='" +
         rand +
         "'><span class='bot'>" +
         reply +

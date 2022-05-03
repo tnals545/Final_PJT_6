@@ -82,7 +82,7 @@ function postwaitReply(reply, delay) {
   var waitid = "disapear";
   setTimeout(function() {
     $("#dialogue").append(
-      "<div class='bot-row' id='" +
+      "<img class='chatbotprofile' src='/img/chatbotprofile.png' alt='noproflies'><div class='bot-row' id='" +
         waitid +
         "'><span class='bot'>" +
         reply +
@@ -101,7 +101,7 @@ function startpostReply(reply, delay) {
   var rand = Math.round(Math.random() * 10000);;
   setTimeout(function () {
     $("#dialogue").append(
-      "<div class='bot-row' id='" +
+      "<img class= 'chatbotprofile' src = '/img/chatbotprofile.png' alt = 'noproflies' ><div class='bot-row' id='" +
         rand +
         "'><span class='bot'>" +
         reply +
@@ -121,7 +121,7 @@ function postReply(reply, delay) {
   setTimeout(function () {
     $("#disapear").remove();
     $("#dialogue").append(
-      "<div class='bot-row' id='" +
+      "<img class= 'chatbotprofile' src = '/img/chatbotprofile.png' alt = 'noproflies' ><div class='bot-row' id='" +
         rand +
         "'><span class='bot'>" +
         reply +
