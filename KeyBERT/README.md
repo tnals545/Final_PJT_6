@@ -81,7 +81,7 @@ with open('/content/drive/MyDrive/6조_파이널PJT/data/SBERT/sb
 
 ```python
 # 질문 -> 제목, 소제목
-# output : str, li (제목, 소제목 리스트)
+# output : str, subs_li (제목, 소제목 리스트)
 
 def find_titles(data, stop_words, question):
 
