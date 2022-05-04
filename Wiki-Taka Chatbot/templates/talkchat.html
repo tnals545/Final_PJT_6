@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Wiki-Taka Chatbot</title>
+  <title>일상회화 챗봇</title>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="/static/style.css">
@@ -31,11 +31,11 @@
             chatbot
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-            <li><a class="dropdown-item" href="T5chatbot">Wiki-Taka 챗봇</a></li>
-            <li><a class="dropdown-item" href="chatbot">Transformer 챗봇</a></li>
-            <li><a class="dropdown-item" href="talkchatbot">Talk 챗봇</a></li>
-            <li><a class="dropdown-item" href="SBERTchatbot">SBERT 챗봇</a></li>
+            <li><a class="dropdown-item" href="SBERTchatbot">Wiki-Taka</a></li>
+            <li><a class="dropdown-item" href="T5chatbot">Wiki-DQ</a></li>
             <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="chatbot">테스트 챗봇</a></li>
+            <li><a class="dropdown-item" href="talkchatbot">일상회화 챗봇</a></li>
             <li><a class="dropdown-item" href="NVchatbot">네이버 챗봇</a></li>
           </ul>
         </li>
@@ -43,6 +43,7 @@
     </div>
   </div>
 </nav>
+<img src='/img/MainpageCharacter.png' alt="Myimage" style="position:absolute; left:30%; top:50px; z-index:-1; opacity:0.5">
   <div class='wrapper'>
     <div id="dialogue"></div>
     <form  method="post" name= "chating" action ="/talkchatresult" onsubmit="sendMessage()" enctype="multipart/form-data" target="iframe1">

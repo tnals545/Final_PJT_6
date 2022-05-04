@@ -26,9 +26,13 @@ function on_load_error(err) {
   console.log("Loading error: " + err);
 }
 
+function validate(event) {
+   event.preventDefault();
+};
+
 function sendMessage() {
   var text = $("#message").val();
-  if (text.length === 0) return false;
+  if (text.length === 0) return validate(event);
   $("#message2").val(text);
   $("#message").val("");
   $("#message").attr("disabled",true);
@@ -53,19 +57,16 @@ function getReply(text) {
 }
 
 function getReply2(text) {
-  $("#message").val("")
-  try {
+  $("#message2").val("")
     var reply = $("#iframe1").contents().find('pre').html();
-    // reply = reply.replace(/\n/g, "<br>");
-    if (reply === '{"detail":[{"loc":["body","message"],"msg":"field required","type":"value_error.missing"}]}') return false;
+   if (reply == "Internal Server Error") {
+    var reply = "현재 답변을 가져올 수 없습니다.";
+    startpostReply(reply);
+    } else {
     anvoice = new Audio("/sounds/answer.mp3")
-    anvoice.volume = 0.4;
     postReply(reply);
-  } catch (e) {
-    postReply(e.message + "\n" + e.line);
-    console.log(e);
   }
-}
+  }
 
 function selectoption(varRow) {
   document.forms[0].subtitle.options[varRow].selected = true ;
@@ -124,9 +125,9 @@ function postwaitReply(reply, delay) {
   var waitid = "disapear";
   setTimeout(function () {
     $("#dialogue").append(
-      "<img class= 'chatbotprofile' src = '/img/chatbotprofile.png' alt = 'noproflies' ><div class='bot-row' id='" +
+      "<div class='bot-row' id='" +
         waitid +
-        "'><span class='bot'>" +
+        "'><img class= 'chatbotprofile' src = '/img/chatbotprofile.png' alt = 'noproflies'><span class='bot'>" +
         reply +
         "</span></div>"
     );
@@ -143,9 +144,9 @@ function startpostReply(reply, delay) {
   var rand = Math.round(Math.random() * 10000);;
   setTimeout(function () {
     $("#dialogue").append(
-      "<img class= 'chatbotprofile' src = '/img/chatbotprofile.png' alt = 'noproflies' ><div class='bot-row' id='" +
+      "<div class='bot-row' id='" +
         rand +
-        "'><span class='bot'>" +
+        "'><img class= 'chatbotprofile' src = '/img/chatbotprofile.png' alt = 'noproflies'><span class='bot'>" +
         reply +
       "</span></div>"
     );
@@ -163,9 +164,9 @@ function postReply(reply, delay) {
   setTimeout(function () {
     $("#disapear").remove();
     $("#dialogue").append(
-      "<img class= 'chatbotprofile' src = '/img/chatbotprofile.png' alt = 'noproflies' ><div class='bot-row' id='" +
+      "<div class='bot-row' id='" +
         rand +
-        "'><span class='bot'>" +
+        "'><img class= 'chatbotprofile' src = '/img/chatbotprofile.png' alt = 'noproflies'><span class='bot'>" +
         reply +
         "</span></div>"
     );
