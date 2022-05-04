@@ -29,9 +29,8 @@ Colab 내에서 폴더 생성 코드를 실행시킨 후
 최종 코드 실행 후 url을 연결하여 실행
 
 ## 실행 예시
-
-<img src="C:\Users\kth96\Desktop\챗봇 실행 예시.png" alt="챗봇 실행 예시" style="zoom:60%;" />
+![챗봇 실행 예시](https://user-images.githubusercontent.com/90551953/166188606-7c15bbd4-41d4-437b-8d3b-1a2f79d4a5ee.png)
 
 - 메시지를 질문 형태로 입력 시 답변 반환
 
-- 마이크 버튼을 누르면 음성 입력 가능(음성 입력을 위해서는 주소 입력시 https://형태로 입력)
+- 마이크 버튼을 누르면 음성 입력 가능(음성 입력을 위해서는 주소 입력시 https:// 형태로 입력)
